@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands</title>
+    <link rel="icon" href="../Nova.png">
+    <link rel="stylesheet" href="commands.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body onload="loaderFunction()">
+
+<div id="loader">
+    <div class="loading">
+    <span></span>
+    </div>
+</div>
+
+
+<div id="page">
+ <nav>
+  <div class="logo noselect">
+    <img class="noselect" src="../Nova.png"> NovaBot
+  </div>
+  
+  <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
+  <ul class="mainMenu noselect">
+    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a class="active" href="#"><i class="far fa-list-alt"></i> Commands</a></li>
+    <li><a href="https://discord.gg/NovaBots" target="_none"><i class="fas fa-headset"></i> Support</a></li>
+    <li><a class="invite noselect" href="https://discord.com/oauth2/authorize?client_id=1098034209467150438&permissions=0&scope=bot%20applications.commands" target="_none"><i class="fab fa-discord"></i> Add to Server</a></li>
+      <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
+  </ul>
+</nav>
+
+
+ 
+<div class="container clear noselect">
+  <div class="row wrapper">
+
+    <span class="collapse" onclick="closeSidePanel()"><i class="fas fa-caret-left"></i></span>
+    <span class="expand" onclick="openSidePanel()"><i class="fas fa-caret-right"></i></span>
+
+      <div class="sidepanel">
+        <div class="divider left"></div>
+
+          <a class="title" href="#introduction">Introduction</a>
+          
+          <a class="section" href="#aboutthisbot">About this Bot</a>
+          <a class="section" href="#technology">Technology</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#gettingstarted">Getting Started</a>
+
+          <a class="section" href="#inbothelp">In-Bot Help</a>
+           <a class="section" href="#addingthebot">Adding the Bot</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#commands">Commands</a>
+
+          <a class="section" href="#moderation">Moderation</a>
+          <a class="section" href="#utility">Utility</a>
+          <a class="section" href="#fun">Fun</a>
+      
+       <div class="space double"></div>
+
+      </div>
+
+      <div class="right-col">
+          <h1 id="introduction">Introduction</h1>
+          
+          <p id="aboutthisbot">NovaBot is the perfect discord moderation bot for your server. With a great amount, and cool commands. NovaBot will have you covered from Moderation, Utility, and Fun.</p> 
+      
+          <h2>About this Bot</h2>
+          
+          <p id="technology">This bot is not only made just for your server. But also so you can have fun with it. We supply a wide amount of commands. Ranging from Moderation to Fun. Which is why people love our bot.</p>
+
+          <h2>Technology</h2>
+          
+          <p id="gettingstarted">This bot uses the discord.js library, and is always a good choice.<br><br>
+          The bot not only uses discord.js, but we also use the MongoDB database.</p> 
+           
+  <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+          <h1>Getting Started</h1>
+          
+          <p id="inbothelp">The bot is fairly easy to setup, all you do is add it, and we do the rest.</p> 
+
+          <p id="addingthebot"><b>Important:</b> You must agree with our Terms of Service, and Privacy Policy..<br><span class="codeBlock"></span></p>
+          
+          
+          <h2>Adding the bot</h2>
+          
+          <p id="commands">To add the bot to your server <a href="https://discord.com/oauth2/authorize?client_id=1098034209467150438&permissions=0&scope=bot%20applications.commands" target="_none">click here.</a><br><br>This does needs you to either be the owner of the server or have "manage server" permissions.</p>
+
+              
+      <div id="anime" class="divider" style="width:24%; margin:30px 0;"></div>
+      
+      
+          <h1>Commands</h1>
+          <div>We have a wide rang of commands, following with the selected categories.
+            <ul>
+            </ul>
+          </div>
+
+          <h2>Moderation</h2>
+          <div>
+            <ul>
+              <li class="collapsible">Ban</li>
+              <div class="cmdCollapse">
+                Description : Let's you ban a targeted user.
+                <br>
+                Usage : <span class="codeBlock"> /ban < target > < optional: reason > </span>
+                <br>
+              </div>
+              <li class="collapsible">Kick</li>
+              <div class="cmdCollapse">
+                Description : Let's you kick a targeted user.
+                <br>
+                Usage : <span class="codeBlock">/kick < target > < optional: reason > </span>
+                <br>
+          </div>
+
+          <h2>Utility</h2>
+          <div>
+            <ul>
+              <li class="collapsible">Help</li>
+              <div class="cmdCollapse">
+                Description :  Supplies you with information about the bot, and supplies a list of commands.
+                <br>
+                Usage : <span class="codeBlock"> /help </span>
+                <br>
+              </div>
+              <li class="collapsible"> NovaBot </li>
+              <div class="cmdCollapse">
+                Description : Supplies some important information about the bot.
+                <br>
+                Usage : <span class="codeBlock"> /novabot </span>
+                <br>
+          </div>
+                            <li class="collapsible"> Ticket Create </li>
+              <div class="cmdCollapse">
+                Description : Creates a ticket channel. So people can get some assistance.
+                <br>
+                Usage : <span class="codeBlock"> /ticketcreate </span>
+                <br>
+          </div>
+          
+          <h2>Fun</h2>
+          <div>
+            <ul>
+              <li class="collapsible">Say</li>
+              <div class="cmdCollapse">
+                Description :  Makes the bot say a custom message.
+                <br>
+                Usage : <span class="codeBlock"> /say < message > </span>
+                <br>
+              </div>
+              <li class="collapsible">Embed</li>
+              <div class="cmdCollapse">
+                Description : Makes the bot send a custom embed message.
+                <br>
+                Usage : <span class="codeBlock"> /embed < title > < description > < optional: footer > < optional: color > </span>
+                <br>
+          </div>
+              
+            </ul>
+          <div class="doublespace"></div>
+      </div>
+
+  </div>
+</div>
+</div>
+  <script src="../index.js"></script>
+  <script src="./commands.js"></script>
+</body>
+</html>
